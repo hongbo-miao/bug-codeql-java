@@ -22,6 +22,7 @@ jobs:
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v2
         with:
+          tools: https://github.com/dsp-testing/codeql-cli-nightlies/releases/download/codeql-bundle-20221216/codeql-bundle-linux64.tar.gz
           languages: java
       - name: Autobuild
         uses: github/codeql-action/autobuild@v2
